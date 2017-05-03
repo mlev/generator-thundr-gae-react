@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm install && webpack",
+    "build": "webpack",
     "clean": "rm -rf src/main/webapp/static",
     "lint": "eslint src/main/static/javascript",
     "start": "webpack-dev-server",

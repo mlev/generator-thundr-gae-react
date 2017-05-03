@@ -141,6 +141,19 @@
 							</arguments>
 						</configuration>
 					</execution>
+                    <execution> <!-- Install JS dependencies during mvn initialize -->
+						<id>install</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<phase>initialize</phase>
+						<configuration>
+							<executable>npm</executable>
+							<arguments>
+								<argument>install</argument>
+							</arguments>
+						</configuration>
+					</execution>
 					<execution> <!-- Build static resources during mvn generate-sources -->
 						<id>build</id>
 						<goals>
@@ -148,9 +161,9 @@
 						</goals>
 						<phase>generate-sources</phase>
 						<configuration>
-              <environmentVariables>
-                <NODE_ENV>production</NODE_ENV>
-              </environmentVariables>
+                            <environmentVariables>
+                                <NODE_ENV>production</NODE_ENV>
+                            </environmentVariables>
 							<executable>npm</executable>
 							<arguments>
 								<argument>run</argument>
