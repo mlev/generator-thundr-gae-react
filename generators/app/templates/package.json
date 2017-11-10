@@ -29,6 +29,7 @@
     "file-loader": "^1.1.5",
     "html-webpack-harddisk-plugin": "^0.1.0",
     "html-webpack-plugin": "^2.29.0",
+    "isomorphic-fetch": "^2.2.1",
     "jest": "^21.2.1",
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
